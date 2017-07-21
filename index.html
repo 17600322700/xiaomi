@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="index.css"/>
+    <link rel="stylesheet" type="text/css" href="demo-files/demo.css"/>
+    <!--<script src="demo-files/demo.js"></script>-->
+    <!--<script src="demo-files/liga.js"></script>-->
+    <script src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript">
+    	window.onload=function(){
+    		 $(".l").hover(function(){
+					var i=$(this).index();
+					$(".bo").eq(i).slideToggle(); 
+				})
+    		 
+    		 $("#lbt").width($("img-li").length*$(".img-li").width());
+//  		 alert($("#lbt").width())
+    		 $(".ol li").click(function(){
+	    		 	$(this).css("background","red").siblings().css("background","white");
+	    			$(".lbt").stop().animate({left:-$(this).index()*$(".img-li").width()})
+    			})
+    		 
+    		 $(".xxk").hover(function(){
+    		 	var i=$(this).index();
+    		 	$(".x").eq(i).css("display","block").siblings().css("display","none");
+    		 	
+    		 });
+    		$("#uu").hover(function(){
+    			$(".x").css("display","none");
+    		})
+    		
+    		
+
+   		};
+   		
+    </script>
+    <style>
+	    .dd:hover{
+	    	transform: translateY(-10px);
+	    }
+    	.lbt{
+    		position: relative;
+    		width:3600px;
+    	}
+    	.img-li{
+    		width:1200px;
+    		height:460px;
+    		float: left;
+    	}
+    	.img-li img{
+    		width:100%;
+    		height:100%;
+    	}
+    	li{
+    		list-style: none;
+    	}
+    	.ol{
+    		width:100px;
+    		height:30px;
+    		position: absolute;
+    		bottom: 0;
+    		right: 0;
+    	}
+    	.ol li{    		
+    		width:20px;
+    		height:20px;
+    		margin-left: 5px;
+    		float: left;
+    		border-radius: 50%;
+    		background:white;
+          text-align: center;
+          line-height: 20px;
+    	}
+    	.ol li:first-child{
+    		background:red;
+    	}
+    	#xxk-box{
+    		width:500px;
+    		position: relative;
+    		top: 0px;
+    		left: 180px;
+    		z-index: 4;
+    	}
+    	
+    	#xxk-box .x{
+    		position: absolute;
+    		top: 0;
+    		width:500px;
+    		height:460px;
+    		background:white;
+    		font-size: 30px;
+    		text-align: center;
+    		line-height: 460px;
+    		display: none;
+    	}
+    </style>
+</head>
+<body>
+	<div class="box">
+		<div class="content">
+			<a href="#">
+				<img src="img/1.png">
+			</a>
+		</div>
+	</div>
+	<div class="box1">
+		<div class="content qfd">
+		<ul>
+			<li>小米商城</li>
+			<li>小米商城</li>
+			<li>小米商城</li>
+			<li>小米商城</li>
+			<li>小米商城</li>
+			<li>小米商城</li>
+			<li>小米商城</li>
+		</ul>
+		<ul>
+			<li>登陆</li>
+			<li>注册</li>
+			<li>消息通知</li>
+			<li>
+				<span class="icon icon-cart"></span>
+				<span>购物车(0)</span>
+			</li>
+		</ul>
+	
+		</div>
+	</div>
+	
+<div class="box2">
+	<div class="content">
+		<nav class="qfd">
+			<div>
+				<img src="img/3.png">
+				<img src="img/4.png">
+			</div>
+			<ul>
+				<li class="l">小米手机</li>
+				<li class="l">小米手机</li>
+				<li class="l">小米手机</li>
+				<li class="l">小米手机</li>
+				<li class="l">小米手机</li>
+				<li class="l">小米手机</li>
+				<li class="l">小米手机</li>
+			</ul>
+			<div class="bo">gfhshg</div>
+			<div class="bo">rytry</div>
+			<div class="bo">nbcnbc</div>
+			<div class="bo">vcngn</div>
+			<div class="bo">tryey</div>
+			<div class="bo">ytu</div>
+			<div class="bo">kjljgkj</div>
+			<div>
+			<input type="text" placeholder="电视4A 49特惠  小米5c 立减200"/>
+            <img src="img/5.png">
+			</div>		
+		</nav>
+		<div id="xxk-box">
+				<div class="x">uioeut</div>
+				<div class="x">jfkldsjfk</div>
+				<div class="x">jfouei</div>
+				<div class="x">xfdgf</div>
+				<div class="x">ksla;fd</div>
+				<div class="x">ioutiroe</div>
+				<div class="x">jvjkdla</div>
+				<div class="x">nvmc,n</div>
+				<div class="x">iiooo</div>
+				<div class="x">yuiyui</div>
+			</div>
+		<article>
+			<section class="qfd">
+				
+				<ul class="qfd ul1" id="uu">
+					
+					<li class="xxk">
+						手机电话卡
+						<span> &gt; </span>
+					</li>
+					<li class="xxk">
+						手机电话卡
+						<span> &gt; </span>
+					</li>
+					<li class="xxk">
+						手机电话卡
+						<span> &gt; </span>
+					</li>
+					<li class="xxk">
+						手机电话卡
+						<span> &gt; </span>
+					</li>
+					<li class="xxk">
+						手机电话卡
+						<span> &gt; </span>
+					</li>
+					<li class="xxk">
+						手机电话卡
+						<span> &gt; </span>
+					</li>
+					<li class="xxk">
+						手机电话卡
+						<span> &gt; </span>
+					</li>
+					<li class="xxk">
+						手机电话卡
+						<span> &gt; </span>
+					</li>
+					<li class="xxk">
+						手机电话卡
+						<span> &gt; </span>
+					</li>
+					<li class="xxk">
+						手机电话卡
+						<span> &gt; </span>
+					</li>
+					
+				</ul>
+			<ul class="lbt" id="#lbt">				
+				<li class="img-li"><a><img src="img/7.png"></a></li>
+				<li class="img-li"><a><img src="img/7.png"></a></li>
+				<li class="img-li"><a><img src="img/7.png"></a></li>
+				
+			</ul>	
+			<ol class="ol">
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>				
+			</ol>		
+			</section>
+			
+			
+			
+			
+			<section class="qfd">
+				<div>
+					<a href="">
+						<img src="img/6.png">
+						<p>选购手机</p>
+					</a>
+					<a href="">
+						<img src="img/6.png">
+						<p>选购手机</p>
+					</a>
+					<a href="">
+						<img src="img/6.png">
+						<p>选购手机</p>
+					</a>
+					<a href="">
+						<img src="img/6.png">
+						<p>选购手机</p>
+					</a>
+					<a href="">
+						<img src="img/6.png">
+						<p>选购手机</p>
+					</a>
+					<a href="">
+						<img src="img/6.png">
+						<p>选购手机</p>
+					</a>
+				</div>
+				<img src="img/8.png" class="img">
+				<img src="img/8.png" class="img">
+				<img src="img/8.png" class="img">
+			</section>
+			
+			
+			<section class="qfd jc">
+				<h1>小米明星单品</h1>
+				<div>
+					<div> > </div>
+					<div> < </div>
+				</div>
+			</section>
+			
+			
+			<section class="jc2">
+				<div style="border-top: solid 1px red;">
+					<img src="img/9.png">
+					<h6>小米笔记本</h6>
+					<p style="color:gray">更轻更薄，直降300</p>
+					<p style="color:red">3599元起</p>
+				</div>
+				<div style="border-top: solid 1px greenyellow;">
+					<img src="img/9.png">
+					<h6>小米笔记本</h6>
+					<p style="color:gray">更轻更薄，直降300</p>
+					<p style="color:red">3599元起</p>
+				</div>
+				<div style="border-top: solid 1px cadetblue;">
+					<img src="img/9.png">
+					<h6>小米笔记本</h6>
+					<p style="color:gray">更轻更薄，直降300</p>
+					<p style="color:red">3599元起</p>
+				</div>
+				<div style="border-top: solid 1px red;">
+					<img src="img/9.png">
+					<h6>小米笔记本</h6>
+					<p style="color:gray">更轻更薄,直降300</p>
+					<p style="color:red">3599元起</p>
+				</div>
+				<div style="border-top: solid 1px greenyellow;">
+					<img src="img/9.png">
+					<h6>小米笔记本</h6>
+					<p style="color:gray">更轻更薄，直降300</p>
+					<p style="color:red">3599元起</p>
+				</div>
+			</section>
+			
+		</article>
+	
+	</div>
+</div>
+		<div class="box3">
+			<div class="content">
+				<article>
+				<section class="qfd">
+					<div class="qfd">
+						<h1>家电</h1>
+						<ul>
+							<li style="color:red">热门</li>
+							<li>电视影音</li>
+							<li>电脑</li>
+							<li>家居</li>
+						</ul>
+					</div>
+						<div>
+							<div class="d1">
+								<img src="img/10.png">
+							</div>
+					
+							<div class="d2">
+								<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<div class="dds">
+									<div>
+										<p>米家扫地机...</p>
+									    <p style="color:red">1699元</p>
+									</div>
+									<img src="img/12.png">
+								</div>
+								<div class="dds dds1">
+									<div>
+										<p>米家扫地机...</p>
+									    <p style="color:red">1699元</p>
+									</div>
+									
+									<img src="img/12.png">
+								</div>
+								
+							</div>
+						</div>
+						</div>
+			</section>
+			
+			
+			<section class="qfd">
+					<div class="qfd">
+						<h1>家电</h1>
+						<ul>
+							<li style="color:red">热门</li>
+							<li>电视影音</li>
+							<li>电脑</li>
+							<li>家居</li>
+						</ul>
+					</div>
+						<div>
+							<div class="d1">
+								<img src="img/10.png">
+							</div>
+					
+							<div class="d2">
+								<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<div class="dds">
+									<div>
+										<p>米家扫地机...</p>
+									    <p style="color:red">1699元</p>
+									</div>
+									<img src="img/12.png">
+								</div>
+								<div class="dds dds1">
+									<div>
+										<p>米家扫地机...</p>
+									    <p style="color:red">1699元</p>
+									</div>
+									
+									<img src="img/12.png">
+								</div>
+								
+							</div>
+						</div>	
+						</div>
+						</section>
+						
+						
+						<section class="qfd">
+					<div class="qfd">
+						<h1>家电</h1>
+						<ul>
+							<li style="color:red">热门</li>
+							<li>电视影音</li>
+							<li>电脑</li>
+							<li>家居</li>
+						</ul>
+					</div>
+						<div>
+							<div class="d1">
+								<img src="img/10.png">
+							</div>
+					
+							<div class="d2">
+								<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<div class="dds">
+									<div>
+										<p>米家扫地机...</p>
+									    <p style="color:red">1699元</p>
+									</div>
+									<img src="img/12.png">
+								</div>
+								<div class="dds dds1">
+									<div>
+										<p>米家扫地机...</p>
+									    <p style="color:red">1699元</p>
+									</div>
+									
+									<img src="img/12.png">
+								</div>
+								
+							</div>
+						</div>
+						</div>
+						</section>
+
+
+				<section class="qfd">
+					<div class="qfd">
+						<h1>家电</h1>
+						<ul>
+							<li style="color:red">热门</li>
+							<li>电视影音</li>
+							<li>电脑</li>
+							<li>家居</li>
+						</ul>
+					</div>
+						<div>
+							<div class="d1">
+								<img src="img/10.png">
+							</div>
+					
+							<div class="d2">
+								<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<img src="img/11.png">
+								<h6>小米电视4A 49英寸</h6>
+								<p style="color:gray">7.1-7.31 直降300</p>
+								<p>
+									<span style="color: red;">2299元</span>
+									<del style="color:gray">2500元</del>
+								</p>
+							</div>
+							<div class="dd ddd">
+								<div class="dds">
+									<div>
+										<p>米家扫地机...</p>
+									    <p style="color:red">1699元</p>
+									</div>
+									<img src="img/12.png">
+								</div>
+								<div class="dds dds1">
+									<div>
+										<p>米家扫地机...</p>
+									    <p style="color:red">1699元</p>
+									</div>
+									
+									<img src="img/12.png">
+								</div>
+								
+							</div>
+						</div>
+						</div>
+						</section>
+				
+			<section class="qfd">
+				<h1>为你推荐</h1>
+				<div>
+					<div class="oo">></div>
+					<div class="oo"><</div>
+				</div>
+			</section>
+			
+			
+			<section class="qfd">
+				<div>
+					<img src="img/9.png">
+					<h6>小米笔记本</h6>
+					<p style="color:gray">更轻更薄，直降300</p>
+					<p style="color:red">3599元起</p>
+				</div>
+				<div>
+					<img src="img/9.png">
+					<h6>小米笔记本</h6>
+					<p style="color:gray">更轻更薄，直降300</p>
+					<p style="color:red">3599元起</p>
+				</div>
+				<div>
+					<img src="img/9.png">
+					<h6>小米笔记本</h6>
+					<p style="color:gray">更轻更薄，直降300</p>
+					<p style="color:red">3599元起</p>
+				</div>
+				<div>
+					<img src="img/9.png">
+					<h6>小米笔记本</h6>
+					<p style="color:gray">更轻更薄,直降300</p>
+					<p style="color:red">3599元起</p>
+				</div>
+				<div>
+					<img src="img/9.png">
+					<h6>小米笔记本</h6>
+					<p style="color:gray">更轻更薄，直降300</p>
+					<p style="color:red">3599元起</p>
+				</div>
+			</section>
+			
+			
+			<section>
+				<h1>热评产品</h1>
+			</section>
+			
+			<section class="qfd">
+				<div>
+					<img src="img/13.png">
+					<div>
+					<p>超级喜欢！小巧玲珑！设置完美！不知道为什么！只要是小米出的东西我都喜欢！那倒是因为那一句？？</p>
+					<p style="color:gray">来自于甜蜜的评论</p>
+					<p><h6>小米随身蓝牙音箱</h6><span style="color:red">69元</span></p>
+				</div>
+				</div>
+				<div>
+					<img src="img/13.png">
+					<div>
+					<p>超级喜欢！小巧玲珑！设置完美！不知道为什么！只要是小米出的东西我都喜欢！那倒是因为那一句？？</p>
+					<p style="color:gray">来自于甜蜜的评论</p>
+					<p><h6>小米随身蓝牙音箱</h6><span style="color:red">69元</span></p>
+				</div>
+				</div>
+				<div>
+					<img src="img/13.png">
+					<div>
+					<p>超级喜欢！小巧玲珑！设置完美！不知道为什么！只要是小米出的东西我都喜欢！那倒是因为那一句？？</p>
+					<p style="color:gray">来自于甜蜜的评论</p>
+					<p><h6>小米随身蓝牙音箱</h6><span style="color:red">69元</span></p>
+				</div>
+				</div>
+				<div>
+					<img src="img/13.png">
+					<div>
+					<p>超级喜欢！小巧玲珑！设置完美！不知道为什么！只要是小米出的东西我都喜欢！那倒是因为那一句？？</p>
+					<p style="color:gray">来自于甜蜜的评论</p>
+					<p><h6>小米随身蓝牙音箱</h6><span style="color:red">69元</span></p>
+				</div>
+					</div>
+			</section>
+			
+			
+			<section>
+				<h1>内容</h1>
+			</section>
+			
+			
+			<section class="qfd">
+				<div style="color:red">
+					<p>图书</p>
+					<h4>哈利波特与被诅咒的孩子</h4>
+					<p style="color:gray">哈利波特第八个故事中文版震撼来袭！<br>特别彩排版剧本</p>
+					<p style="color:gray">29.37元</p>
+					<img src="img/14.png">
+					<div>
+						<div class="xy"></div>
+						<div class="xy"></div>
+						<div class="xy"></div>
+					</div>
+				</div>
+				<div style="color:red">
+					<p>图书</p>
+					<h4>哈利波特与被诅咒的孩子</h4>
+					<p style="color:gray">哈利波特第八个故事中文版震撼来袭！<br>特别彩排版剧本</p>
+					<p style="color:gray">29.37元</p>
+					<img src="img/14.png">
+					<div>
+						<div class="xy"></div>
+						<div class="xy"></div>
+						<div class="xy"></div>
+					</div>
+				</div>
+				<div style="color:red">
+					<p>图书</p>
+					<h4>哈利波特与被诅咒的孩子</h4>
+					<p style="color:gray">哈利波特第八个故事中文版震撼来袭！<br>特别彩排版剧本</p>
+					<p style="color:gray">29.37元</p>
+					<img src="img/14.png">
+					<div>
+						<div class="xy"></div>
+						<div class="xy"></div>
+						<div class="xy"></div>
+					</div>
+				</div>
+				<div style="color:red">
+					<p>图书</p>
+					<h4>哈利波特与被诅咒的孩子</h4>
+					<p style="color:gray">哈利波特第八个故事中文版震撼来袭！<br>特别彩排版剧本</p>
+					<p style="color:gray">29.37元</p>
+					<img src="img/14.png">
+					<div>
+						<div class="xy"></div>
+						<div class="xy"></div>
+						<div class="xy"></div>
+					</div>
+				</div>
+			</section>
+			
+			<section style="margin-top: 20px;">
+				<h1>视频</h1>
+			</section>
+			
+			<section class="qfd">
+				<div>
+					<img src="img/15.png">
+					<p>听雷总讲述小米7年工艺探索之路</p>
+					<p style="font-size: 13px;color:gray">小米6，7年工艺探索的巅峰之作</p>
+				</div>
+				<div>
+					<img src="img/15.png">
+					<p>听雷总讲述小米7年工艺探索之路</p>
+					<p style="font-size: 13px;color:gray">小米6，7年工艺探索的巅峰之作</p>
+				</div>
+				<div>
+					<img src="img/15.png">
+					<p>听雷总讲述小米7年工艺探索之路</p>
+					<p style="font-size: 13px;color:gray">小米6，7年工艺探索的巅峰之作</p>
+				</div>
+				<div>
+					<img src="img/15.png">
+					<p>听雷总讲述小米7年工艺探索之路</p>
+					<p style="font-size: 13px;color:gray">小米6，7年工艺探索的巅峰之作</p>
+				</div>
+			</section>
+			
+			
+				</article>
+			</div>
+		</div>
+	
+	
+	<div class="box4">
+		<div class="content">
+			<footer class="qfd">
+				<ul class="qfd">
+					<li>7天无理由退货</li>
+					<li>7天无理由退货</li>
+					<li>7天无理由退货</li>
+					<li>7天无理由退货</li>
+					<li>7天无理由退货</li>
+				</ul>
+				<ul>
+					<li>
+						<h6>帮助中心</h6>
+						<p>账户管理</p>
+						<p>账户管理</p>
+						<p>账户管理</p>
+					</li>
+					<li>
+						<h6>帮助中心</h6>
+						<p>账户管理</p>
+						<p>账户管理</p>
+						<p>账户管理</p>
+					</li>
+					<li>
+						<h6>帮助中心</h6>
+						<p>账户管理</p>
+						<p>账户管理</p>
+						<p>账户管理</p>
+					</li>
+					<li>
+						<h6>帮助中心</h6>
+						<p>账户管理</p>
+						<p>账户管理</p>
+						<p>账户管理</p>
+					</li>
+					<li>
+						<h6>帮助中心</h6>
+						<p>账户管理</p>
+						<p>账户管理</p>
+						<p>账户管理</p>
+					</li>
+					<li>
+						<h6>帮助中心</h6>
+						<p>账户管理</p>
+						<p>账户管理</p>
+						<p>账户管理</p>
+					</li>
+				</ul>
+				<div class="fd qfd">
+					<h1 style="color: orange;">小米客服</h1>
+					<p>7*24小时全天陪伴</p>
+					<p>为您解决问题</p>
+				</div>
+				<div class="fd1 qfd">
+					<ul class="u qfd">
+						<li>小米商城</li>
+						<li>小米商城</li>
+						<li>小米商城</li>
+						<li>小米商城</li>
+					</ul>
+					<p>房间都是jfk了的沙发考虑的就是看了；发就看到了沙发看到楼上</p>
+					<p>减肥的是机卡分离；几点开始啦；；分开的逻辑是否考虑的就仨房开道具收费</p>
+				</div>
+				<div id="fd3">
+					<img src="img/20.png">
+					<img src="img/20.png">
+					<img src="img/20.png">
+					<img src="img/20.png">
+					
+				</div>
+			</footer>
+			<!--<p>探索黑科技   为发烧而生</p>-->
+		</div>
+	</div>
+	
+</body>
+</html>
